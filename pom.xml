@@ -1,5 +1,5 @@
 <dependency>
   <groupId>customskinloader</groupId>
-  <artifactId>CustomSkinLoader_Forge</artifactId>
+  <artifactId>CustomSkinLoader_Fabric</artifactId>
   <version>14.13-SNAPSHOT-188</version>
 </dependency>
