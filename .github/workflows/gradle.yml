@@ -5,9 +5,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ csl-14 ]
+    branches: [ 8Mi_Yile-Actions ]
   pull_request:
-    branches: [ csl-14 ]
+    branches: [ 8Mi_Yile-Actions ]
 
 jobs:
   build:
