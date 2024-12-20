@@ -118,7 +118,7 @@ public class MojangAPILoader implements ICustomSkinLoaderPlugin, ProfileLoader.I
 
     //Username -> UUID
     public static GameProfile loadGameProfile(String apiRoot, String username) {
-        //Doc (https://wiki.vg/Mojang_API#Playernames_-.3E_UUIDs)
+        //Doc (https://minecraft.wiki/w/Mojang_API#Query_player_UUIDs_in_batch)
         HttpRequestUtil.HttpResponce responce = HttpRequestUtil.makeHttpRequest(new HttpRequestUtil.HttpRequest(apiRoot + "profiles/minecraft").setCacheTime(600).setPayload(GSON.toJson(Collections.singletonList(username))));
         if (StringUtils.isEmpty(responce.content)) {
             return null;
@@ -154,7 +154,7 @@ public class MojangAPILoader implements ICustomSkinLoaderPlugin, ProfileLoader.I
 
     //UUID -> Profile
     public static GameProfile fillGameProfile(String sessionRoot, GameProfile profile) {
-        //Doc (http://wiki.vg/Mojang_API#UUID_-.3E_Profile_.2B_Skin.2FCape)
+        //Doc (https://minecraft.wiki/w/Mojang_API#Query_player's_skin_and_cape)
         HttpRequestUtil.HttpResponce responce = HttpRequestUtil.makeHttpRequest(new HttpRequestUtil.HttpRequest(sessionRoot + "session/minecraft/profile/" + TextureUtil.fromUUID(profile.getId())).setCacheTime(90));
         if (StringUtils.isEmpty(responce.content)) {
             return profile;

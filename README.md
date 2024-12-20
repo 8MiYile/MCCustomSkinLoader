@@ -75,7 +75,7 @@ The problem of incorrectly rendering textures has been fixed.
 By using this mod, you can see correct avatar of players in Spectator Menu rather than steve and alex.  
   
 ## Default Load List  
-- [Mojang](http://www.minecraft.net/) (MojangAPI)
+- [Mojang](https://minecraft.wiki/w/Mojang_API) (MojangAPI)
 - [LittleSkin](https://littleskin.cn/) (CustomSkinAPI)  
 - [BlessingSkin](http://skin.prinzeugen.net/) (CustomSkinAPI)
 - [ElyBy](http://docs.ely.by/) (ElyByAPI)
